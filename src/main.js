@@ -1,8 +1,10 @@
 import Vue from 'vue'
-import './plugins/axios'
 import App from './App.vue'
 import './plugins/element.js'
 import router from './router'
+// axios接口请求配置
+import server from './http/api.js'
+Vue.prototype.$server = server
 
 Vue.config.productionTip = false
 

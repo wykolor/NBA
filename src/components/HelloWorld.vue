@@ -77,7 +77,7 @@ export default {
     msg: String
   },
   created() {
-    this.$server.indexApi.goodsAddress({ type: "guess" }).then(res => {
+    this.$server.indexApi.goodsAddress({ pageIndex: "" }).then(res => {
       console.log(res);
     });
     console.log(this.$server);

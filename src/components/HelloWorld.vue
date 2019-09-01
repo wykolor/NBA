@@ -77,10 +77,11 @@ export default {
     msg: String
   },
   created() {
-    this.$server.indexApi.goodsAddress({ pageIndex: "" }).then(res => {
-      console.log(res);
-    });
-    console.log(this.$server);
+    this.$server.indexApi
+      .goodsAddress({ pageSize: 10, pageIndex: 1, companyName: "" })
+      .then(res => {
+        console.log(res);
+      });
   }
 };
 </script>

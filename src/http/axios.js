@@ -1,6 +1,5 @@
 import baseURL from './env'
 import axios from 'axios';
-console.log(baseURL)
 // 请求超时时间
 axios.defaults.timeout = 10000;
 //设置默认接口地址
